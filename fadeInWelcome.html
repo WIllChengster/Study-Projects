@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fade in welcome test</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <style>
+        body{
+            background-color:black;
+        }
+        li{
+            opacity:1;
+            color:white;
+            font-weight:500;
+            font-size: 200px;
+            display:inline-block;
+            transition: transform 5s ,opacity 5s;
+        }
+        .hidden{
+            opacity:0;
+        }
+        ul{
+            margin: 15% 27%
+        }
+        .item:nth-child(1){ transform: translateX(-100%) translateY(100%);}
+        .item:nth-child(2) {transform: translateX(50%) translateY(-100%);}
+        .item:nth-child(3){transform: translateX(-120%) translateY(70%);}
+        .item:nth-child(4){transform: translateX(200%) translateY(-100%);}
+        .item:nth-child(5){transform: translateX( -80%) translateY(50%)}
+        .item:nth-child(6){transform: translateX(100%) translateY(165%);}
+        .item:nth-child(7){transform: translateX(200%) translateY(-100%)}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('li').removeClass('item hidden')
+        })
+    </script>
+</head>
+<body>
+    <ul class="welcome">
+        <li class="base item hidden">w</li>
+        <li class="base item hidden">e</li>
+        <li class="base item hidden">l</li>
+        <li class="base item hidden">c</li>
+        <li class="base item hidden">o</li>
+        <li class="base item hidden">m</li>
+        <li class="base item hidden">e</li>
+    </ul>
+
+</body>
+</html>
