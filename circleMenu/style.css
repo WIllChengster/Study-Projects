@@ -4,26 +4,68 @@
     position: relative;
 }
 
+.circlesContainer{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
 
-
-.circleContainer{
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
+.pieContainer{
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height:300px;
     width: 300px;
     border-radius:50%;
     border:2px solid black;
+    overflow:hidden;
+    z-index:10;
+
+}
+.innerCircle{
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border:1px solid black;
+    background-color: lightskyblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index:11
 }
 
 .sq{
     position:absolute;
     top: 50%;
     left: 50%;
-    height: 300px;
-    width: 300px;
-    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
     transform-origin: left top;
-    transform:skew(50deg)
+    box-sizing:border-box;
+    
 }
-
+.sq:first-child{
+    transform:rotate(-90deg)skew(45deg);
+}
+.sq:nth-child(2){
+    transform:rotate(-45deg)skew(45deg);
+}
+.sq:nth-child(3){
+    transform:rotate(0deg)skew(45deg);
+}
+.sq:nth-child(4){
+    transform:rotate(45deg)skew(45deg);
+}
+.sq:nth-child(even){
+    background-color:red;
+}
+.sq:nth-child(odd){
+    background-color:orange;
+}
