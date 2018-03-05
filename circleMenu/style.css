@@ -23,7 +23,12 @@
     border:2px solid black;
     overflow:hidden;
     z-index:10;
+    transform:scale(1);
+    transition: all .3s 
 
+}
+.hidden{
+    transform:scale(.1)
 }
 .innerCircle{
     position:absolute;
@@ -37,7 +42,8 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    z-index:11
+    z-index:11;
+    outline:none;
 }
 
 .sq{
