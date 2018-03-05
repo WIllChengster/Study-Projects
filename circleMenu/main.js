@@ -12,4 +12,5 @@ function attachEventHandlers(){
 
 function openPie(){
     $('.pieContainer').toggleClass('hidden')
+    $('.overlay').toggleClass('fade')
 }
