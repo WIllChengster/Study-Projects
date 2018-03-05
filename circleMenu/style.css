@@ -57,6 +57,29 @@
     box-sizing:border-box;
     
 }
+.sq:first-child>svg{
+    text-align:center;
+    position:absolute;
+    transform: skew(-45deg)translate(77px, 30px)rotate(90deg)
+}
+
+.sq:nth-child(2)>svg{
+    text-align:center;
+    position:absolute;
+    transform: skew(-45deg)translate(77px, 30px)rotate(45deg)
+}
+
+.sq:nth-child(3)>svg{
+    text-align:center;
+    position:absolute;
+    transform: skew(-45deg)translate(77px, 30px)rotate(0deg)
+}
+.sq:nth-child(4)>svg{
+    text-align:center;
+    position:absolute;
+    transform: skew(-45deg)translate(77px, 30px)rotate(-45deg)
+}
+
 .sq:first-child{
     transform:rotate(-90deg)skew(45deg);
 }
