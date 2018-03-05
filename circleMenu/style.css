@@ -125,9 +125,15 @@ body{
     margin: 0 auto;
     width: 50%;
 }
+.overlay{
+    opacity:1;
+    transition: all 1s;
+}
 .fade{
     background-color:black;
-    opacity: 0.6;
+    opacity: 0.8;
     height:100%;
     width:100%;
+    transition: all .5s;
+
 }
