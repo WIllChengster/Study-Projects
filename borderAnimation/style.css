@@ -1,0 +1,50 @@
+.container{
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: yellow;
+    height: 500px;
+    width: 200px;
+    transition: ease-in-out 2s;
+}
+line{
+    transition:ease-in-out 1s;
+}
+
+line.top, line,bottom{
+    stroke-width:10;
+    stroke: #000;
+    stroke-dasharray: 200px
+}
+line.right, line.left{
+    stroke-width: 10;
+    stroke: #000;
+    stroke-dasharray: 500px;
+}
+
+svg:hover line.top{
+    transform:translateX(-200%);
+}
+svg:hover line.right{
+    transform:translateY(-200%);
+}
+svg:hover line.bottom{
+    transform:translatex(200%);
+}
+svg:hover line.left{
+    transform:translateY(200%);
+}
+.boxTransition{
+    /* background-image: url(https://pics.me.me/such-doggo-upvote-screenshot-and-repost-29822392.png); */
+    background-position:center;
+    background-color:red;
+}
