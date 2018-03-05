@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+
+.circleContainer{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height:300px;
+    width: 300px;
+    border-radius:50%;
+    border:2px solid black;
+}
+
+.sq{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    transform-origin: left top;
+    transform:skew(50deg)
+}
+
