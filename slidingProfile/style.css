@@ -32,8 +32,13 @@ div.box{
 .picture{
     grid-area: 1 / 2 / row-end / 4;
     box-sizing:border-box;
-    background-color:red;
     z-index:9;
+    opacity:0;
+    transform:translateX(-70%);
+    transition:.3s all;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
 .item1{
@@ -54,4 +59,9 @@ div.box{
 }
 h3{
     text-align:center;
+}
+
+.profilePic{
+    opacity:1;
+    transform:translateX(0%);
 }
