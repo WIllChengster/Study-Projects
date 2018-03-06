@@ -1,0 +1,91 @@
+body{
+    overflow:hidden;
+    background-image: url(https://vignette.wikia.nocookie.net/streetfighter/images/e/e2/SF4DesertedTemple.jpg/revision/latest/scale-to-width-down/2000?cb=20130322171406);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:stretch;
+}
+.container{
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position:absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing:border-box;
+    height: 70%;
+    width: 50%;
+    border: 1px solid white;
+}
+.leftNav>div{
+    border: 1px solid white;
+}
+
+.leftNav{
+    grid-column: 1/2;
+    grid-row: 1/row-end;
+    box-sizing:border-box;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    z-index:10;
+}
+.picture{
+    grid-area: 1 / 2 / row-end / 4;
+    box-sizing:border-box;
+    z-index:9;
+    opacity:0;
+    transform:translateX(-100%);
+    transition:.4s all;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.item1{
+    grid-row: 1/2;
+    display:grid;
+}
+.item2{
+    grid-row: 2/3;
+    display:grid;
+}
+.item3{
+    grid-row:3/4;
+    display:grid;
+}
+.item4{
+    grid-row:4/5;
+    display:grid;
+}
+h3{
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.profilePic{
+    opacity:1;
+    transform:translateX(0%);
+}
+
+.prof1{
+    background-image: url(https://vignette.wikia.nocookie.net/fatal-fiction-fanon/images/3/3b/Street_Fighter_-_Ryu_doing_his_Dragon_Punch_as_seen_in_Tatsunoko_VS_Capcom.png/revision/latest?cb=20160430054943)
+}
+.prof2{
+    background-image:url(https://vignette.wikia.nocookie.net/vsbattles/images/e/ef/Akuma-1.png/revision/latest?cb=20160116011412)
+}
+.prof3{
+    background-image:url(https://vignette.wikia.nocookie.net/p__/images/6/66/Street_Fighter_-_Ken_Masters_as_he_appears_in_Street_Fighter_III_Third_Strike_Online_Edition.png/revision/latest?cb=20170901102445&path-prefix=protagonist)
+}
+.prof4{
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/72/1f/8c/721f8c657ec3f852a7d3e15444282a63.png)
+}
