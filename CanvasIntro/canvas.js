@@ -41,8 +41,8 @@ function Circle(x,y,radius,dx,dy, m){
                 circleArray[i].dy = -circleArray[i].dy;
                 circleArray[i].x += circleArray[i].dx;
                 circleArray[i].y += circleArray[i].dy;
-                this.dx=-this.dx;
-                this.dy=-this.dy;
+                this.dx= -this.dx;
+                this.dy= -this.dy;
 
                 // circleArray[i].dx = -conserveEnergy(circleArray[i].m, circleArray[i].dx, this.m, this.dx) ;
                 // circleArray[i].dy = -conserveEnergy(circleArray[i].m, circleArray[i].dy, this.m, this.dy);
@@ -107,6 +107,8 @@ function resolveCollision(particle, otherParticle) {
 
         otherParticle.velocity.x = vFinal2.x;
         otherParticle.velocity.y = vFinal2.y;
+    }
+}
 
 function conserveEnergy( m1, v1, m2, v2 ){
 

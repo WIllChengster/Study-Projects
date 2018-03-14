@@ -1,0 +1,55 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 300vh;
+
+}
+.header {
+    height: 12vh;
+    width: 100vw;
+    background-color: #f0f3bd;
+    overflow:hidden;
+    position:fixed;
+    max-height: 50vh;
+    top:0;
+    z-index:9999;
+}
+
+.header h1 {
+    color: #05668D
+}
+
+.header ul {
+    position:absolute;
+    bottom:0;
+    width: 100vw;
+    padding:0;
+}
+
+li{
+    display:inline-block;
+    list-style:none;
+    width: 19vw;
+    text-align:center;
+}
+
+
+
+.moveBox{
+    margin: 16vh auto 0 auto;
+    border:2px solid black;
+    width: 50vw;
+    height: 50vh;
+    position:relative;
+}
+
+.movableElement{
+    height: 20vh;
+    width: 20vh;
+    border:1px solid black;
+    background-color:red;
+    position:absolute;
+}
