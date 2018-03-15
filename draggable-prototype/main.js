@@ -25,28 +25,22 @@ function moveMouse(){
     var x = initx;
     var y = inity
     moveElement(x,y)
-
     $(window).on('mouseup', release);
 }
 
 function moveElement(initx,inity){
-
     var finx = event.pageX;
     var finy = event.pageY;
     // var offTop = $('.movableElement').css('top');
     // var offLeft = $('.movableElement').css('left');
-
-
     var posX = finx - initx;
     var posY = finy -inity;
-
     $('.movableElement').css({'top': topVal+posY, 'left': leftVal+posX })
 }
 
 function release(){
     initx = event.pageX
     inity = event.pageY
-    console.log(initx, inity) 
     $('.moveBox').off('mousemove');
     $(window).off('mouseup');
 }
