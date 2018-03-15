@@ -8,21 +8,45 @@ function attachEventHandlers(){
     $('.movableElement').on('mousedown', mouseDown);
 
 }
+var initx;;
+var inity;
+var top;
+var left;
 
 function mouseDown(){
+    initx = event.pageX;
+    inity = event.pageY;
+    topVal = parseFloat($('.movableElement').css('top'));
+    leftVal = parseFloat($('.movableElement').css('left'));
     $('.moveBox').on('mousemove', moveMouse);
 }
 
-function moveMouse(e){
-    var x = e.pageX + $('.movableElement').position().left;
-    var y = e.pageY + $('.movableElement').position().top;
-    console.log($('.movableElement').position().left, $('.movableElement').position().top);
+function moveMouse(){
+    var x = initx;
+    var y = inity
+    moveElement(x,y)
 
-    $('.movableElement').offset({top: e.pageY, left: e.pageX});
     $(window).on('mouseup', release);
 }
 
+function moveElement(initx,inity){
+
+    var finx = event.pageX;
+    var finy = event.pageY;
+    // var offTop = $('.movableElement').css('top');
+    // var offLeft = $('.movableElement').css('left');
+
+
+    var posX = finx - initx;
+    var posY = finy -inity;
+
+    $('.movableElement').css({'top': topVal+posY, 'left': leftVal+posX })
+}
+
 function release(){
+    initx = event.pageX
+    inity = event.pageY
+    console.log(initx, inity) 
     $('.moveBox').off('mousemove');
     $(window).off('mouseup');
 }
