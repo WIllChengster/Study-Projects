@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height:100vh;
+}
+
+.left{
+    background-color: cyan;
+    position:absolute;
+    margin:auto;
+    left:0;
+    width: 20%;
+    height:100%;
+    z-index:2;
+}
+.rightBorder{
+    background-color:black;
+    float:right;
+    width: 1%;
+    height:100%;
+    cursor:e-resize;
+}
+
+.stuff {
+    background-color: greenyellow;
+    width: 100%;
+    height:100%;
+    z-index: 1 ;
+    position:relative;
+}
+
+.right{
+    background-color: cyan;
+    position:absolute;
+    margin:auto;
+    right:0;
+    width: 20%;
+    height:100%;
+    z-index:2;
+}
